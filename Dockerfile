@@ -1,4 +1,4 @@
-FROM golang:alpine AS binarybuilder
+FROM golang:alpine 
 WORKDIR /app
 COPY hello.go .
 RUN go build hello.go 
